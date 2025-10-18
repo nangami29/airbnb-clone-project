@@ -144,3 +144,31 @@ The platform records and manages payment transactions for bookings. This ensures
 6. Admin Dashboard
 
 Administrators can monitor platform activity, manage users and listings, and review system metrics. This feature helps maintain operational control and ensures the platform runs smoothly.
+
+API Security
+
+Securing backend APIs is a critical aspect of the Airbnb Clone project to protect user data, ensure safe transactions, and prevent unauthorized access. The following key security measures will be implemented:
+
+1. Authentication
+
+Users are required to log in with secure credentials (email/username and password) to access the platform. Authentication ensures that only registered users can interact with sensitive endpoints, protecting personal information and user accounts.
+
+2. Authorization
+
+Role-based access control will be implemented to determine what actions a user can perform. For example, hosts can manage their properties, guests can make bookings, and admins can oversee all platform activities. This prevents unauthorized actions and maintains platform integrity.
+
+3. Rate Limiting
+
+APIs will implement rate limiting to prevent abuse and protect the server from excessive requests or potential denial-of-service attacks. This ensures stability and fair usage of the system.
+
+4. Data Validation and Sanitization
+
+All inputs from users will be validated and sanitized to prevent security vulnerabilities such as SQL injection or cross-site scripting (XSS). This protects both the application and its users from malicious attacks.
+
+5. Secure Payment Handling
+
+Sensitive payment data will be handled carefully, ensuring transactions are encrypted and securely stored. This protects users’ financial information and builds trust in the platform.
+
+Importance
+
+These security measures are essential to safeguard user information, maintain trust, and ensure reliable operation of the platform. Without proper security, the system could be vulnerable to attacks, data breaches, and financial fraud.
