@@ -39,18 +39,7 @@ Documentation Lead: Ensures clear, structured documentation.
 
 Project Manager: Oversees milestones and team coordination.
 
-Key Features 
-User authentication and profile management
 
-Property listing and filtering
-
-Booking and payment simulation
-
-Reviews and ratings system
-
-Admin dashboard for listing management
-
-Secure API endpoints with token-based authentication
 
 Database Design
 
@@ -130,3 +119,28 @@ A property can have multiple bookings and reviews.
 Each booking is connected to one user and one property, and has an associated payment.
 
 Reviews are connected to both users and properties.
+
+Feature Breakdown
+1. User Management
+
+This feature allows users to sign up, log in, and manage their profiles securely. It includes role-based access control, distinguishing between guests, hosts, and administrators, ensuring the right level of access for different users.
+
+2. Property Management
+
+Hosts can create, update, and delete property listings with details such as title, description, location, and pricing. This feature ensures that properties are accurately represented and easily discoverable by potential guests.
+
+3. Booking System
+
+Users can book available properties for specific dates and manage their reservations. The system validates availability, tracks booking status, and ensures that both guests and hosts have a clear record of transactions.
+
+4. Reviews and Ratings
+
+Guests can leave feedback and rate properties they have stayed in. This feature helps maintain quality standards on the platform and provides future guests with valuable insights before booking.
+
+5. Payment Processing
+
+The platform records and manages payment transactions for bookings. This ensures secure handling of financial data and provides a reliable system for tracking completed and pending payments.
+
+6. Admin Dashboard
+
+Administrators can monitor platform activity, manage users and listings, and review system metrics. This feature helps maintain operational control and ensures the platform runs smoothly.
