@@ -172,3 +172,27 @@ Sensitive payment data will be handled carefully, ensuring transactions are encr
 Importance
 
 These security measures are essential to safeguard user information, maintain trust, and ensure reliable operation of the platform. Without proper security, the system could be vulnerable to attacks, data breaches, and financial fraud.
+
+CI/CD Pipeline
+
+Continuous Integration (CI) and Continuous Deployment (CD) are software development practices that automate the testing, building, and deployment of code. By integrating changes frequently and deploying them automatically, CI/CD ensures that the project remains stable, reduces errors, and speeds up development.
+
+Importance for the Project
+
+Automated Testing: Ensures new code does not break existing functionality.
+
+Faster Deployment: Streamlines updates and feature releases to the live environment.
+
+Consistency: Guarantees uniform development, testing, and deployment processes.
+
+Collaboration: Supports multiple developers working simultaneously without conflicts.
+
+Tools Used
+
+GitHub Actions: Automates testing and deployment workflows.
+
+Docker: Provides containerization for consistent environments across development and production.
+
+Other CI/CD Platforms (Optional): Jenkins, GitLab CI, or CircleCI can also be used.
+
+Implementing a CI/CD pipeline ensures that the Airbnb Clone project maintains high quality, reliability, and efficiency throughout its development lifecycle.
