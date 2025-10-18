@@ -51,3 +51,82 @@ Reviews and ratings system
 Admin dashboard for listing management
 
 Secure API endpoints with token-based authentication
+
+Database Design
+
+The database is designed to support the core functionality of the Airbnb Clone application, including users, property listings, bookings, reviews, and payments. Below is a breakdown of the main entities, their important fields, and relationships.
+
+Key Entities
+1. Users
+
+Fields: id (primary key), username, email, password, role (guest/host/admin)
+
+Description: Stores information about all users of the platform.
+
+Relationships:
+
+A user can list multiple properties (as a host).
+
+A user can make multiple bookings (as a guest).
+
+A user can write multiple reviews.
+
+2. Properties
+
+Fields: id (primary key), title, description, location, price, host_id (foreign key to Users)
+
+Description: Stores information about the properties listed on the platform.
+
+Relationships:
+
+A property belongs to one host (user).
+
+A property can have multiple bookings.
+
+A property can receive multiple reviews.
+
+3. Bookings
+
+Fields: id (primary key), user_id (guest), property_id, start_date, end_date, status
+
+Description: Tracks reservations made by users for properties.
+
+Relationships:
+
+Each booking belongs to one user (guest).
+
+Each booking is linked to one property.
+
+4. Reviews
+
+Fields: id (primary key), user_id, property_id, rating, comment, created_at
+
+Description: Stores feedback and ratings left by users for properties.
+
+Relationships:
+
+Each review is written by a user.
+
+Each review belongs to a property.
+
+5. Payments
+
+Fields: id (primary key), booking_id, amount, payment_method, payment_status, payment_date
+
+Description: Records payment transactions for bookings.
+
+Relationships:
+
+Each payment is linked to a booking.
+
+Through the booking, the payment is associated with a user and a property.
+
+Entity Relationship Overview
+
+A user can host multiple properties and make multiple bookings.
+
+A property can have multiple bookings and reviews.
+
+Each booking is connected to one user and one property, and has an associated payment.
+
+Reviews are connected to both users and properties.
